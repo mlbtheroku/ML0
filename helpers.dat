@@ -1,7 +1,7 @@
 #
 # Leechr - <http://ashysoft.wordpress.com/>
 #
-# Copyright 2008-2014 Paul Ashton <drashy@gmail.com>
+# Copyright 2008-2015 Paul Ashton <drashy@gmail.com>
 #
 # This file is part of Leechr.
 #
@@ -26,7 +26,7 @@
 #                   http://ashysoft.wordpress.com/
 ########################################################################
 
-HELPERS_DAT_VERSION = 49
+HELPERS_DAT_VERSION = 50
 LEECHR_REQ_VERSION = "0.7.1"
 
 # Help the search out a bit
@@ -68,7 +68,6 @@ u"CSI: NY":["CSI NY", "CSI New York"],
 u"Dragon's Den (UK)":["Dragons Den"],
 u"Eleventh Hour (US)":["Eleventh Hour"],
 u"Flash Forward (2009)":["Flash Forward"],
-u"Late Night with Jimmy Fallon":["Jimmy Fallon"],
 u"Late Night with Seth Meyers":["Seth Meyers"],
 u"Law & Order: Criminal Intent":["Law and Order Criminal Intent", "Law and Order CI"],
 u"Law & Order: Special Victims Unit":["Law and Order SVU"],
@@ -83,7 +82,12 @@ u"The Pete Holmes Show":["Pete Holmes"],
 u"The Real Hustle (UK)":["The Real Hustle"],
 u"The Secret Diary of a Call Girl":["Secret Diary of a Call Girl"],
 u"The Tonight Show Starring Jimmy Fallon":["Jimmy Fallon"],
-u"The Tonight Show with Conan O'Brien":["Conan"]
+u"The Daily Show with Trevor Noah":["The Daily Show"],
+u"The Late Late Show with James Corden":["James Corden"],
+u"The Nightly Show with Larry Wilmore":["The Nightly Show"],
+u"Key & Peele":["Key and Peele"],
+u"Penn & Teller\: Fool Us":["Penn and Teller Fool Us"],
+u"The Late Show with Stephen Colbert":["Stephen Colbert"]
 }
 
 #Ignore results with these words in them...
@@ -127,7 +131,8 @@ u"MythBusters":[( 9, 1,  9,  12, -1, +17),  # S09E01..12  > S08E18..29
 
 u"The Little Couple":[(2, 3, 2, 17, 0, -2)], # S02E03-S02E17 > S02E01-S02E15
 u"The Sarah Silverman Program":[(2, 7, 2, 16, +1, -5)], # S02E07-S02E16 > S03E01-S03E10
-u"Warehouse 13":[(1, 2, 1, 13, 0, +1)] #S01E02-S01E13 > S01E03-S01E14
+u"Warehouse 13":[(1, 2, 1, 13, 0, +1)], #S01E02-S01E13 > S01E03-S01E14
+u"Bar Rescue":[(4, 1, 10, 99, +1, 0)]
 }
 
 # Shows that are released with dates instead of episode numbers
@@ -143,13 +148,17 @@ u"Late Night with Seth Meyers",
 u"Late Show with David Letterman",
 u"Real Time With Bill Maher",
 u"The Colbert Report",
-u"The Daily Show",
+u"The Daily Show With Jon Stewart",
+u"The Daily Show with Trevor Noah",
 u"The Late Late Show with Craig Ferguson",
 u"The Pete Holmes Show",
 u"The Soup",
 u"The Tonight Show Starring Jimmy Fallon",
 u"The Tonight Show with Conan O'Brien",
-u"The Tonight Show with Jay Leno"
+u"The Tonight Show with Jay Leno",
+u"The Nightly Show with Larry Wilmore",
+u"The Late Late Show with James Corden",
+u"The Late Show with Stephen Colbert"
 ]
 
 # Shows that are released with episode-names instead of episode-numbers

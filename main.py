@@ -1719,7 +1719,7 @@ class MyEpisodes(object):
 
     seasonEpisode = "%02dx%02d" % (seasonNum, episodeNum)
     try:
-      page = urllib2.urlopen("http://www.myepisodes.com/views.php?type=epsbyshow&showid=%s" % showID)
+      page = urllib2.urlopen("http://www.myepisodes.com/legacy/epsbyshow/%s" % showID)
       soup = BeautifulSoup(page)
       thisEp = soup.find(text=seasonEpisode).parent.parent
       date = thisEp.find("td",{"class":"date"}).a.string
